@@ -1,3 +1,13 @@
+<?php
+$mode = 'encode';
+$key = 'abcdefghijklmnopqstuvwxyz1234567890';
+if('key' == $mode) {
+    $key_original = str_split($key);
+    shuffle($key_original);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
