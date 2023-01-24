@@ -6,6 +6,8 @@
 // call the file name with correct directory
 $filename = 'E:\wamp\www\mastering-php\DataScrambler\FILE\data\f1.txt';
 
+// Check that the file is exists and also readable.
+
 if(is_readable($filename)) {
 
     // Open the file first
@@ -34,3 +36,22 @@ if(is_readable($filename)) {
     $data = file_get_contents($filename);
     echo $data;
 }
+
+
+
+/* Data write and append in the file */
+
+$filepath = 'E:\wamp\www\mastering-php\DataScrambler\FILE\data\f2.txt';
+
+// Open the file first
+
+$file = fopen($filepath, 'a');
+$text = "sahinur salafee\n";
+$text2 = "I am a wordpress developer\n";
+$text = "My name is john\n";
+
+
+fwrite($file, $text);
+fwrite($file, $text2);
+fclose($file);
+
