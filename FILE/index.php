@@ -41,17 +41,19 @@ if(is_readable($filename)) {
 
 /* Data write and append in the file */
 
-$filepath = 'E:\wamp\www\mastering-php\DataScrambler\FILE\data\f2.txt';
+$filepath = 'E:\\wamp\\www\\mastering-php\\DataScrambler\\FILE\\data\\f2.txt';
 
 // Open the file first
 
-$file = fopen($filepath, 'a');
-$text = "sahinur salafee\n";
-$text2 = "I am a wordpress developer\n";
-$text = "My name is john\n";
-
-
-fwrite($file, $text);
-fwrite($file, $text2);
-fclose($file);
+if(is_writable($filepath)) {
+    $file = fopen($filepath, 'a');
+    $text = "sahinur salafee\n";
+    $text2 = "I am a wordpress developer\n";
+    $text = "My name is john\n";
+    
+    
+    fwrite($file, $text);
+    fwrite($file, $text2);
+    fclose($file);
+}
 
