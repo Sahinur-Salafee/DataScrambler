@@ -52,11 +52,11 @@ if(is_writable($filepath)) {
     $text = "My name is john\n";
     
     
-    fwrite($file, $text);
-    fwrite($file, $text2);
+    // fwrite($file, $text);
+    // fwrite($file, $text2);
     fclose($file);
 
     $text = "My name is kajy\n";
-    file_put_contents($filepath, $text, FILE_APPEND | LOCK_EX);
+    // file_put_contents($filepath, $text, FILE_APPEND | LOCK_EX);
 }
 

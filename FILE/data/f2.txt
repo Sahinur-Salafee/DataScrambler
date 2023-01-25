@@ -17,3 +17,6 @@ My name is lucy
 My name is john
 I am a wordpress developer
 My name is kajy
+My name is john
+I am a wordpress developer
+My name is kajy
