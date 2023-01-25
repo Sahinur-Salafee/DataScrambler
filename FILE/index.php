@@ -60,3 +60,32 @@ if(is_writable($filepath)) {
     // file_put_contents($filepath, $text, FILE_APPEND | LOCK_EX);
 }
 
+
+
+
+/* Insert array data */
+$file_location = 'E:\\wamp\\www\\mastering-php\\DataScrambler\\FILE\\data\\f3.txt';
+
+    $students = array(
+        array(
+            'fname' => 'john',
+            'lname' => 'deo',
+            'age' => 12,
+            'class' => 6,
+            'roll' => 1,
+        ),
+        array(
+            'fname' => 'jony',
+            'lname' => 'deo',
+            'age' => 13,
+            'class' => 7,
+            'roll' => 3,
+        ),
+        array(
+            'fname' => 'donald',
+            'lname' => 'trump',
+            'age' => 16,
+            'class' => 10,
+            'roll' => 1,
+        ),
+    );
